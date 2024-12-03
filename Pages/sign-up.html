@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Us</title>
+    <meta name="description" content="Raven Reports sign up page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    <header>
+        <nav>
+            <!--Navigation Bar Menu-->
+              <img src="" alt="">
+              <div id="nav-bar">
+                <a href="../index.html">Home</a>
+                <a href="breaking-news.html">Breaking News</a>
+                <a href="subscription.html">Subscription</a>
+                <a href="about-us.html">About Us</a>
+                
+            <!--Account Management-->
+                <button onclick="location.href='sign-up.html'">Log In</button>
+                <button onclick="location.href='log-in.html'">Sign Up</button>          
+              </div>
+            </nav>
+    </header>
+  
+    <main>
+        <!-- Logo -->
+        <img src="" alt="">
+        <h1>Join the Ravens</h1>
+        <form id="signup-form">
+          <div>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+          </div>
+          <div class="signup-field">
+            <input type="date" id="birthday" name="birthday" placeholder="Birthday" required>
+          </div>
+          <div class="signup-field"></div>
+            <input type="tel" id="phone" name="phone" placeholder="123 456 7890" required>
+          </div>
+          <div class="signup-field"></div>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="signup-field"></div>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+          </div>
+          <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+      </main>
+
+    <footer>
+        <p>&copy;Raven Reports 2024</p>
+    </footer>
+  </body>
+</html>
