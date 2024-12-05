@@ -8,7 +8,7 @@ nav {
 }
 
 nav img {
-    width: 400px;
+    width: 100px;
     height: auto;
 }
 
@@ -19,7 +19,7 @@ nav img {
 }
 
 #nav-bar a {
-    color: var(--light-blue);
+    color: var(--white);
     text-decoration: none;
     font-size: 1rem;
     padding: 8px 12px;
@@ -39,7 +39,7 @@ nav img {
     display: none; /* Hide by default */
     background: none;
     border: none;
-    color: var(--light-blue);
+    color: var(--white);
     background-color: var(--light-green);
     font-size: 2rem;
     cursor: pointer;
@@ -79,9 +79,9 @@ nav img {
     top: 50%; /* Vertical centering */
     left: 50%; /* Horizontal centering */
     transform: translate(-50%, -50%); /* Offset to truly center */
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Broadway', sans-serif;
     font-size: 10ch;
     text-transform: uppercase;
-    color: var(--light-blue);
+    color: var(--white);
     z-index: 1; /* Ensure text appears above the image and overlay */
 }

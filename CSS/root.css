@@ -2,6 +2,7 @@
     --light-blue: #D6E5F2;
     --charcoal: #31375B;
     --light-green: #73BFAD;
+    --white: #fff
     
 }
 
@@ -32,7 +33,7 @@ body {
 /* Buttons */
 button {
     background-color: var(--light-green); 
-    color: #fff;
+    color: var(--white);
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -49,7 +50,7 @@ button:hover {
 /* Footer Styling */
 footer {
     background-color: var(--charcoal);
-    color: var(--light-blue);
+    color: var(--white);
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
@@ -61,7 +62,7 @@ footer {
 
 footer p {
     margin: 0;
-    color: var(--light-blue);
+    color: var(--white);
 }
 
 footer a {
@@ -87,7 +88,7 @@ footer .footer-links a {
 /* Responsive Design */
 @media (max-width: 1201px) {
     nav img {
-        width: 300px;
+        width: 100px;
         height: auto;
     }
 
@@ -129,7 +130,7 @@ footer .footer-links a {
 
 @media (max-width: 700px) {
     nav img {
-        width: 200px;
+        width: 100px;
         height: auto;
     }
 
