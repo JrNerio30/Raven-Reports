@@ -1,9 +1,9 @@
-const APIKEY = "63bb53d3e814c6daccbfa2ab5f79be1c"
+const APIKEY = "e96a787f6caae27dd766c692e0a2fd7e"
 const fetchData = async (API) => {
   try {
     const response = await fetch(API);
     
-    if (response.status === 429 || response.status === 426) {
+    if (response.status === 429) {
       maximumRequest.classList.add("reach-limit-request");
       mainNewsContainer.classList.add("remove");
       return;
@@ -41,6 +41,7 @@ const formatDate = (newsDate) => {
 /*/////////////////////////////////////////////
                   TECH NEWS
 /////////////////////////////////////////////*/
+
 const technologies = async () => {
   const API = `https://gnews.io/api/v4/top-headlines?category=technology&lang=en&country=canada&max=5&apikey=${APIKEY}`;
 
