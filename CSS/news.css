@@ -1,7 +1,7 @@
 main.main-news-container{
   min-height: 100vh;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -69,7 +69,11 @@ figure img{
   padding: 1rem;
 }
 
-section.reach-limit-request{
+section#maximumRequest{
+  display: none;
+}
+
+section#maximumRequest.reach-limit-request{
   display: flex;
   flex-direction: column;
   align-items: center;
