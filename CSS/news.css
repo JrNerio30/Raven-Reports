@@ -87,5 +87,6 @@ section.reach-limit-request h2{
 
 section.reach-limit-request p{
   font-size: 1rem;
+  padding-inline: 1rem;
 }
 
