@@ -3,10 +3,10 @@ const fetchData = async (API) => {
   try {
     const response = await fetch(API);
     
-    if (response.status === 429) {
+    if (response.status === 429 || response.status === 426) {
       maximumRequest.classList.add("reach-limit-request");
       mainNewsContainer.classList.add("remove");
-      return; // Stop further execution of this function
+      return;
     }
     
     if (response.ok) {
