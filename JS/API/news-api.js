@@ -1,4 +1,4 @@
-const APIKEY = "e86ce6039c33433aafff632f0fe9bf5c"
+const APIKEY = "7f71a052cac841168993b2c6643ed9e6"
 const fetchData = async (API) => {
   try {
     const response = await fetch(API);
@@ -76,7 +76,10 @@ const techLists = () => {
                 <img src="${news.urlToImage}" alt="${news.description}">
               </figure>
           `;
-          technologyNewsList.appendChild(newsArticles)
+          technologyNewsList.appendChild(newsArticles);
+          if(news.content === "[Removed]"){
+            newsArticles.style.display = 'none';
+          }
     });
   }
 }
@@ -118,6 +121,9 @@ const sportsLists = () => {
         </figure>
       `;
       sportsNewsList.appendChild(newsArticles);
+      if(news.content === "[Removed]"){
+        newsArticles.style.display = 'none';
+      }
     });
   }
 }
@@ -162,7 +168,10 @@ const politicsLists = () => {
               </figure>
           `;
       politicsNewsList.appendChild(newsArticles);
-    })
+      if(news.content === "[Removed]"){
+        newsArticles.style.display = 'none';
+      }
+    });
   }
 }
 
@@ -203,6 +212,9 @@ const ukraineLists  = () => {
         </figure>
       `;
       ukraineNewsList.appendChild(newsArticles);
+      if(news.content === "[Removed]"){
+        newsArticles.style.display = 'none';
+      }
     });
   }
 }
