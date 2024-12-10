@@ -1,4 +1,4 @@
-const APIKEY = "7f71a052cac841168993b2c6643ed9e6"
+const APIKEY = "63bb53d3e814c6daccbfa2ab5f79be1c"
 const fetchData = async (API) => {
   try {
     const response = await fetch(API);
@@ -22,7 +22,7 @@ const fetchData = async (API) => {
 
 let techNews = [];
 let politicsNews = [];
-let ukraineNews = [];
+let businessNews = [];
 let sportsNews = [];
 
 const formatDate = (newsDate) => {
@@ -42,7 +42,7 @@ const formatDate = (newsDate) => {
                   TECH NEWS
 /////////////////////////////////////////////*/
 const technologies = async () => {
-  const API = `https://newsapi.org/v2/everything?q=technologies&apiKey=${APIKEY}&pageSize=5`;
+  const API = `https://gnews.io/api/v4/top-headlines?category=technology&lang=en&country=canada&max=5&apikey=${APIKEY}`;
 
   const data = await fetchData(API);
 
@@ -73,7 +73,7 @@ const techLists = () => {
                 <p>${formatDate(news)}</p>
               </section>
               <figure>
-                <img src="${news.urlToImage}" alt="${news.description}">
+                <img src="${news.image}" alt="${news.description}">
               </figure>
           `;
           technologyNewsList.appendChild(newsArticles);
@@ -88,7 +88,7 @@ const techLists = () => {
                   SPORTS NEWS
 /////////////////////////////////////////////*/
 const sports = async () => {
-  const API = `https://newsapi.org/v2/everything?q=sport&apiKey=${APIKEY}&pageSize=5`;
+  const API = `https://gnews.io/api/v4/top-headlines?category=sports&lang=en&country=canada&max=5&apikey=${APIKEY}`;
 
   const data = await fetchData(API);
 
@@ -117,7 +117,7 @@ const sportsLists = () => {
           <p>${formatDate(news)}</p>
         </section>
         <figure>
-          <img src="${news.urlToImage}" alt="${news.description}">
+          <img src="${news.image}" alt="${news.description}">
         </figure>
       `;
       sportsNewsList.appendChild(newsArticles);
@@ -133,7 +133,7 @@ const sportsLists = () => {
 /////////////////////////////////////////////*/
 
 const politics = async () => {
-  const API = `https://newsapi.org/v2/everything?q=politics&apiKey=${APIKEY}&pageSize=5`;
+  const API = `https://gnews.io/api/v4/top-headlines?category=politics&lang=en&country=canada&max=5&apikey=${APIKEY}`;
 
   const data = await fetchData(API);
 
@@ -164,7 +164,7 @@ const politicsLists = () => {
                 <p>${formatDate(news)}</p>
               </section>
               <figure>
-                <img src="${news.urlToImage}" alt="${news.description}">
+                <img src="${news.image}" alt="${news.description}">
               </figure>
           `;
       politicsNewsList.appendChild(newsArticles);
@@ -176,25 +176,26 @@ const politicsLists = () => {
 }
 
 /*/////////////////////////////////////////////
-                UKRAINE NEWS
+              BUSINESS NEWS
 /////////////////////////////////////////////*/
-const ukraine = async () => {
-  const API = `https://newsapi.org/v2/everything?q=ukraine&apiKey=${APIKEY}&pageSize=5`;
+const business = async () => {
+  const API = `https://gnews.io/api/v4/top-headlines?category=business&lang=en&country=canada&max=5&apikey=${APIKEY}`;
 
   const data = await fetchData(API);
 
   if (data) {
-    ukraineNews = data.articles;
-    localStorage.setItem('ukraineNews', JSON.stringify(ukraineNews));
-    ukraineLists();
+    businessNews = data.articles;
+    localStorage.setItem('businessNews', JSON.stringify(businessNews));
+    businessLists();
   }
 };
-ukraine();
+business();
 
-const ukraineLists  = () => {
-  ukraineNewsList.innerHTML = "";
-  if(ukraineNews.length > 0){
-    ukraineNews.forEach((news) => {
+const businessLists  = () => {
+  businessNewsList.innerHTML = "";
+  if(businessNews.length > 0){
+
+    businessNews.forEach((news) => {
       const newsArticles = document.createElement("article");
 
       newsArticles.innerHTML = `
@@ -208,10 +209,10 @@ const ukraineLists  = () => {
           <p>${formatDate(news)}</p>
         </section>
         <figure>
-          <img src="${news.urlToImage}" alt="${news.description}">
+          <img src="${news.image}" alt="${news.description}">
         </figure>
       `;
-      ukraineNewsList.appendChild(newsArticles);
+      businessNewsList.appendChild(newsArticles);
       if(news.content === "[Removed]"){
         newsArticles.style.display = 'none';
       }
