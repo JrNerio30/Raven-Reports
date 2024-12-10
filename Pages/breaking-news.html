@@ -8,13 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../CSS/base.css">
     <link rel="stylesheet" href="../CSS/root.css">
+    <link rel="stylesheet" href="../CSS/news.css">
     <script src="../JS/base.js" defer></script>
+    <script src="../JS/API/news-api.js" defer></script>
+    <script src="https://kit.fontawesome.com/879ba98a23.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
         <nav>
             <!--Navigation Bar Menu-->
-              <img src="../Assets/RavenReport-Icon.svg" alt="">
+            <a href="../index.html">
+              <img src="../Assets/RavenReport-Icon.svg" alt="RavenReport Logo">
+            </a>
               <div id="nav-bar">
                 <a href="../index.html">Home</a>
                 <a href="breaking-news.html">Breaking News</a>
@@ -32,42 +37,35 @@
             </nav>
     </header>
   
-    <main>
-        <!--Breaking News Section-->
-        <section id="breaking-news-section">
-        <h1>Breaking News</h1>
-        
-            <!--Article 1-->
+    <!--Breaking News Section-->
+    <main class="main-news-container" id="mainNewsContainer">
+      <h1>Breaking News</h1>
 
-            <article class="breaking-news">
-                <img src="" alt="" class="news-image">
-                <div class="news-content">
-                <h2>News Article 1</h2>
-                <p>Brief description of news article.</p>
-                </div>
-            </article>
+        <!--TECHNOLOGIES NEWS-->
+        <h2>Technologies</h2>
+        <Section class="news-list" id="technologyNewsList">
+        </Section>
 
-            <!--Article 2-->
-
-            <article class="breaking-news">
-                <img src="" alt="" class="news-image">
-                <div class="news-content">
-                <h2>News Article 2</h2>
-                <p>Brief description of news article.</p>
-                </div>
-            </article>
-
-            <!--Article 3-->
-
-            <article class="breaking-news">
-                <img src="" alt="" class="news-image">
-                <div class="news-content">
-                <h2>News Article 3</h2>
-                <p>Brief description of news article.</p>
-                </div>
-            </article>
+        <!--SPORTS NEWS-->
+        <h2>Sports</h2>
+        <section class="news-list" id="sportsNewsList">
         </section>
-      </main>
+
+        <!--POLITICS NEWS-->
+        <h2>Politics</h2>
+        <section class="news-list" id="politicsNewsList">
+        </section>
+      
+        <!--UKRAINE NEWS-->
+        <h2>Business</h2>
+        <section class="news-list" id="businessNewsList">
+        </section>
+    </main>
+
+    <section id="maximumRequest">
+      <h2>Error 429</h2>
+      <p>You have exceeded the API request limit for today. Please try again.</p>
+    </section>
 
       <footer>
       
