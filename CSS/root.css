@@ -15,6 +15,7 @@ main {
     margin: 0 5%; /* Adds 10% margin on the left and right */
     padding: 0 2ch; /* Optional: adds inner space to prevent text from touching the edges */
     flex: 1;
+    padding-top: 15rem;
 }
 
 /* Base styles */
@@ -49,7 +50,7 @@ button:hover {
 
 /* Footer Styling */
 footer {
-    background-color: var(--charcoal);
+   
     color: var(--white);
     text-align: center;
     padding: 20px 0;
@@ -58,6 +59,8 @@ footer {
     bottom: 0;
     width: 100%;
     font-family: 'Calibri', sans-serif;
+    padding-top: 9rem;
+    background: linear-gradient(to bottom, transparent, var(--charcoal));
 }
 
 footer p {
