@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../CSS/base.css">
     <link rel="stylesheet" href="../CSS/root.css">
+    <link rel="stylesheet" href="../CSS/subscription.css">
     <script src="../JS/base.js" defer></script>
   </head>
   <body>
@@ -32,44 +33,57 @@
                 &#9776; <!-- Unicode for hamburger icon -->
               </button>
             </nav>
-    </header>
-  
-    <main>
-    
+    </header>  
     <!--Subscription Info-->
-      <section id="subscriptions-information">
-        <h1>Subscribe for more news!</h1>
-        <img src="" alt="">
-        <p>For those who enjoy being in the know, we provide a subscription service that ensures you don't miss critical updates that matter the most to you.</p>
-        <!--Should bring to checkout page-->
-        <button onclick="location.href='checkout.html'">Subscribe</button>
+      <section class="subscription-options-container">
+        <h1>Subscription Options</h1>
+        <main>
+          <!-- OPTION 1 -->
+          <section class="subscription-options">
+            <h2>Pro</h2>
+            <figure>
+              <img src="../Assets/Man in Front of Laptop.jpg" alt="Man in Front of Laptop">
+            </figure>
+            <section class="subscription-contents">
+              <h3>$95 <span>/Month*</span></h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam est quae eligendi beatae. Unde aperiam doloribus, perferendis neque ratione consequuntur inventore vel eaque in eum quisquam, error eos autem consequatur.</p>
+              <a href="../Pages/log-in.html">Subscribe</a>
+            </section>
+          </section>
+          
+          <!-- OPTION 2 -->
+          <section class="subscription-options">
+            <h2>Premium</h2>
+            <figure>
+              <img src="../Assets/Man with Laptop.jpg" alt="Man with Laptop">
+            </figure>
+            <section class="subscription-contents">
+              <h3>$95 <span>/Month*</span></h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam est quae eligendi beatae. Unde aperiam doloribus, perferendis neque ratione consequuntur inventore vel eaque in eum quisquam, error eos autem consequatur.</p>
+              <a href="../Pages/log-in.html">Subscribe</a>
+            </section>
+          </section>
+          
+          <!-- OPTION 3 -->
+          <section class="subscription-options">
+            <h2>Raven</h2>
+            <figure>
+              <img src="../Assets/Man with MacBook.jpg" alt="Man with MacBook">
+            </figure>
+            <section class="subscription-contents">
+              <h3>$95 <span>/Month*</span></h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam est quae eligendi beatae. Unde aperiam doloribus, perferendis neque ratione consequuntur inventore vel eaque in eum quisquam, error eos autem consequatur.</p>
+              <a href="../Pages/log-in.html">Subscribe</a>
+            </section>
+          </section>
+        </main>
       </section>
-      
-      <!--Subscription Package?-->
-      <section id="subscription-packages">
-        <h2>Subscription Packages</h2>
-        <article class="subscriptions">
-          <h2>Tier 1</h2>
-          <div>
-            <img src="" alt="">
-            <p>Description of the difference between tier 1 and 2.</p>
-          </div>
-        </article>
 
-        <!--Subscription Package-->
-        <article class="subscriptions">
-          <h2>Tier 2</h2>
-          <div>
-            <p>Description of the difference between tier 1 and 2.</p>
-            <img src="" alt="">
-          </div>
-        </article>
+      <section class="FAQ-accordions-container">
+
       </section>
-
-    </main>
 
     <footer>
-      
       <p>&copy; Raven Reports 2024. All Rights Reserved.</p>
       <div class="footer-links">
           <a href="#">Privacy Policy</a>
