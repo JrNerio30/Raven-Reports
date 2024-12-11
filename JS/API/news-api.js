@@ -1,4 +1,4 @@
-const APIKEY = "a578b294b1d9a67718e86a158245f290";
+const APIKEY = "e96a787f6caae27dd766c692e0a2fd7e";
 // Function to fetch data from API with retry mechanism
 const fetchData = async (API, retries = 3, delay = 1000) => {
   try {
