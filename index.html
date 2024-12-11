@@ -11,48 +11,66 @@
 </head>
 <body>
     <header>
-        <nav>
-        <!--Navigation Bar Menu-->
-        <a href="index.html">
-          <img src="Assets/RavenReport-Icon.svg" alt="">
-        </a>
-          <div id="nav-bar">
-            <a href="index.html">Home</a>
-            <a href="Pages/breaking-news.html">Breaking News</a>
-            <a href="Pages/subscription.html">Subscription</a>
-            <a href="Pages/about-us.html">About Us</a>
-            
-        <!--Account Management-->
-            <button onclick="location.href='Pages/sign-up.html'">Sign Up</button>
-            <button onclick="location.href='Pages/log-in.html'">Log In</button>          
-          </div>
+      <nav>
+      <!--Navigation Bar Menu-->
+      <a href="index.html">
+        <img src="Assets/RavenReport-Icon.svg" alt="">
+      </a>
+        <div id="nav-bar">
+          <a href="index.html">Home</a>
+          <a href="Pages/breaking-news.html">Breaking News</a>
+          <a href="Pages/subscription.html">Subscription</a>
+          <a href="Pages/about-us.html">About Us</a>
+          
+      <!--Account Management-->
+          <button onclick="location.href='Pages/sign-up.html'">Sign Up</button>
+          <button onclick="location.href='Pages/log-in.html'">Log In</button>          
+        </div>
 
-          <button class="menu-toggle" aria-label="Toggle navigation">
-            &#9776; <!-- Unicode for hamburger icon -->
-          </button>
-        
-        </nav>
-  
-        <!--Hero Banner-->
-          <div id="hero-banner"> 
-            <img src="Assets/hero-image.jpg" alt="hero banner image">
-            <h1>Stay informed about the world around you.</h1>
-          </div>
-      </header>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          &#9776; <!-- Unicode for hamburger icon -->
+        </button>
+      
+      </nav>
+
+      <!--Hero Banner-->
+        <div id="hero-banner"> 
+          <img src="Assets/hero-image.jpg" alt="hero banner image">
+          <h1>Stay informed about the world around you.</h1>
+        </div>
+    </header>
   
     <main> 
-    <section id="about-us"> 
-        <h2>About Us</h2>
-        <div id="about-us-content">
-        <img src="" alt="">
+      <section class="homepage-section"> 
+          <h2>About Us</h2>
+          <div id="about-us-content">
+            <img src="Assets/About.jpg" alt="">
+            <p>
+                At Raven Reports, we believe staying informed and up-to-date on world events is important. 
+                Our website offers comprehensive coverage, including breaking news and in-depth stories from around the globe. 
+                For those who enjoy being in the know, we provide a subscription service that ensures you don't miss critical updates that matter to you. 
+                Stay ahead of the news with Raven Reports—your trusted source for information around you.
+            </p>
+          </div>
+      </section>
+
+      <section class="homepage-section">
+        <h2>Breaking News</h2>
+        <p>Check out breaking news from around the world and stay up to date with the hottest topics!</p>
+        <button id="breaking-news-button" onclick="location.href='Pages/breaking-news.html'" >Breaking News</button>
+      </section>
+
+      <section class="homepage-section">
+        <h2>Our History</h2>
         <p>
-            At Raven Reports, we believe staying informed and up-to-date on world events is important. 
-            Our website offers comprehensive coverage, including breaking news and in-depth stories from around the globe. 
-            For those who enjoy being in the know, we provide a subscription service that ensures you don't miss critical updates that matter to you. 
-            Stay ahead of the news with Raven Reports—your trusted source for information around you.
+          Raven Reports was founded in 1888 by the journalist Edgar Talon, who believed that the raven was a symbol of wisdom. 
+          Armed with a quill pen, and an uncanny knack for sniffing out the truth, Sir Talon began publishing hand-pressed newsletters.
+          Initially distributed by carrier ravens who were professionally trained to deliver scrolls of news to Calgary's elite, the newsletter quickly gained popularity. The digital age brought Raven Reports to new heights. 
+          Today, Raven Reports remains a beacon of journalistic excellence, delivering breaking news all around the world.
         </p>
-        </div>
-    </section>
+      </section>
+
+
     </main>
 
     <footer>
