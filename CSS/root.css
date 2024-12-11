@@ -16,6 +16,7 @@ main {
     padding: 0 2ch; /* Optional: adds inner space to prevent text from touching the edges */
     flex: 1;
     padding-top: 15rem;
+    padding-bottom: 5rem;
 }
 
 /* Base styles */
@@ -131,7 +132,7 @@ footer .footer-links a {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     nav img {
         width: 100px;
         height: auto;

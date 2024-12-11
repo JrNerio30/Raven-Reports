@@ -48,6 +48,7 @@ nav img {
     cursor: pointer;
     position: relative;
     z-index: 11; /* Ensure it's above the nav */
+    border-radius: 50%;
 }
 
 /* Hero Banner */
@@ -235,4 +236,126 @@ button[type="submit"]:hover{
     border-radius: 5px;
     box-sizing: border-box;
     font-family: 'Calibri', sans-serif;
+}
+
+/* About Us Section */
+
+#about-us-page {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#about-us-page h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#about-us-page img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about-us-page p {
+    font-size: 1.5rem;
+    color: var(--charcoal);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Company Values Section */
+#company-values {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px; /* Limit the width of the entire section */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
+article {
+    flex: 1 1 45%; /* Allows flexibility while preventing excessive width */
+    max-width: 600px; /* Sets a maximum width to maintain readability */
+    background-color: #eaf2f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+article h2 {
+    font-size: 2rem;
+    color: var(--charcoal);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.company-statements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.company-statements img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company-statements p {
+    font-size: 1rem;
+    color: var(--charcoal);
+    line-height: 1.6;
+    max-width: 400px; /* Restrict the width of the text for readability */
+    margin: 0 auto; /* Center the text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #company-values {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px; /* Reduce side padding for smaller screens */
+    }
+
+    article {
+        max-width: 100%; /* Allow full width on smaller screens */
+        flex: 1 1 100%;
+        padding: 15px; /* Reduce padding for more room */
+    }
+
+    article h2 {
+        font-size: 1.8rem; /* Slightly smaller heading for better fit */
+    }
+
+    .company-statements p {
+        font-size: 0.9rem; /* Slightly smaller text for better fit */
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    #company-values {
+        padding: 0 10px; /* Further reduce side padding */
+    }
+
+    article {
+        padding: 10px; /* Minimize padding for more text room */
+    }
+
+    article h2 {
+        font-size: 1.6rem; /* Adjust heading size for very small screens */
+    }
+
+    .company-statements p {
+        font-size: 0.85rem; /* Smaller text for very small screens */
+        
+    }
 }
