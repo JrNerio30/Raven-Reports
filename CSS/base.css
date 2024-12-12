@@ -250,6 +250,9 @@ button[type="submit"]:hover{
 #about-us-page {
     text-align: center;
     margin-bottom: 40px;
+    background-color: #eaf2f8;
+    padding: 3ch;
+    border-radius: 8px;
 }
 
 #about-us-page h1 {
