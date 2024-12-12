@@ -10,3 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
         navBar.classList.toggle('active'); // Toggle the 'active' class on click
     });
 });
+
+
+/*//////////////////////////////////////////////////////////////
+    FAQ Accordion Button
+//////////////////////////////////////////////////////////////*/
+const allAccordionButton = [firstAccordionButton, secondAccordionButton, thirdAccordionButton, fourthAccordionButton, fifthAccordionButton, sixthAccordionButton];
+const allAccordionContent = [firstAccordionContent, secondAccordionContent, thirdAccordionContent, fourthAccordionContent, fifthAccordionContent, sixthAccordionContent];
+
+allAccordionButton.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        allAccordionContent.forEach((content, contentIndex) => {
+            if(contentIndex != index) {
+                content.classList.remove("active");
+            }
+        });
+
+        allAccordionContent[index].classList.toggle("active");
+    });
+})
