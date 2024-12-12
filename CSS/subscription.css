@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+section.subscription-options-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  margin-block: 10rem 5rem;
+  min-height: fit-content;
+}
+
+section.subscription-options-container h1{
+  margin-top: 5rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+section.subscription-options{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: .625rem;
+  padding: 1rem 1.5rem;
+  max-height: fit-content;
+}
+
+section.subscription-options figure{
+  margin-bottom: 1rem;
+}
+
+section.subscription-options figure img{
+  width: 100%;
+  max-width: 20rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: .625rem;
+}
+
+section.subscription-options h2{
+  margin-bottom: 1rem;
+}
+
+section.subscription-contents{
+  display: flex;
+  flex-direction: column;
+  gap: 1re;
+}
+
+section.subscription-contents h3{
+
+}
+
+section.subscription-contents h3 span{
+  color: rgb(173, 173, 173);
+}
+
+
+section.subscription-contents p{
+  max-width: 40ch;
+}
+
+section.subscription-contents a{
+  text-decoration: none;
+  color: var(--charcoal);
+  padding: .8rem 2rem;
+  background-color: var(--charcoal);
+  color: var(--light-blue);
+  border-radius: 10px;
+  margin-top: 2rem;
+  font-weight: bold;
+  text-align: center;
+  transition: all 200ms;
+
+  &:hover{
+    background-color: var(--light-blue);
+    color: var(--charcoal);
+    border: .0625rem solid var(--charcoal);
+  }
+}
