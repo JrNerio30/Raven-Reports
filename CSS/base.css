@@ -238,6 +238,13 @@ button[type="submit"]:hover{
     font-family: 'Calibri', sans-serif;
 }
 
+/*ERROR HANDLING*/
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
 /* About Us Section */
 
 #about-us-page {

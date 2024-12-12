@@ -43,19 +43,29 @@
           <h1>Join the Ravens</h1>
           <div class="signup-field">
             <input type="text" id="first-name" name="first-name" placeholder="First Name">
+            <span class="error-message"></span>
             <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+            <span class="error-message"></span>
           </div>
           <div class="signup-field">
             <input type="date" id="birthday" name="birthday">
+            <span class="error-message"></span>
           </div>
           <div class="signup-field">
             <input type="tel" id="phone" name="phone" placeholder="123 456 7890">
+            <span class="error-message"></span>
           </div>
           <div class="signup-field">
-            <input type="email" id="email" name="email" placeholder="Email">
+            <input id="email" name="email" placeholder="Email">
+            <span class="error-message"></span>
           </div>
           <div class="signup-field">
             <input type="password" id="password" name="password" placeholder="Password">
+            <span class="error-message"></span>
+          </div>
+          <div class="signup-field">
+            <input type="password" id="password-confirm" name="password" placeholder="Confirm password">
+            <span class="error-message"></span>
           </div>
           <button type="submit" class="signup-button" onclick="location.href='../Pages/checkout.html'">Sign Up</button>
         </form>
