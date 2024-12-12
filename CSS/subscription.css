@@ -58,10 +58,6 @@ section.subscription-contents{
   gap: 1re;
 }
 
-section.subscription-contents h3{
-
-}
-
 section.subscription-contents h3 span{
   color: rgb(173, 173, 173);
 }
@@ -88,4 +84,69 @@ section.subscription-contents a{
     color: var(--charcoal);
     border: .0625rem solid var(--charcoal);
   }
+}
+
+.FAQ-accordions-container{
+  min-height: 60vh;
+  display: flex;
+  align-items: center; /* Align to start for better readability */
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  padding: 0 2rem; /* Add some padding on sides for better spacing */
+}
+
+.FAQ-accordions-container h2{
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: 2rem;
+}
+
+section.accordion{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center accordion buttons */
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto; /* Center the section */
+}
+
+section.accordion button{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--charcoal);
+  padding: 1rem;
+  width: 100%;
+  max-width: 60rem;
+  text-align: left;
+  transition: all 200ms;
+  border-radius: 0;
+  border-bottom: .0625rem solid var(--white);
+  white-space: nowrap; /* Prevent wrapping of button text */
+  text-wrap: wrap;
+}
+
+section.accordion button:hover{
+  background-color: var(--light-green);
+}
+
+aside.accordion-content{
+  overflow: hidden;
+  max-height: 0;
+  width: 100%;
+  max-width: 60rem;
+  background-color: var(--white);
+  color: var(--charcoal);
+  border-radius: .25rem;
+  transition: all 200ms;
+  padding: 0;
+}
+
+aside.accordion-content.active{
+  max-height: 10vh; /* Increase height on active state */
+  overflow-y: auto;
+}
+
+aside.accordion-content p {
+  font-size: 1rem;
+  padding: 1rem;
 }
